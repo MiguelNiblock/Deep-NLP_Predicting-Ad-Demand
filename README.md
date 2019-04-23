@@ -35,146 +35,7 @@ Avito is a Russian classified advertisements platform similar to Craigslist. The
 
 ## 5. Short EDA
 
-
-```python
-train.head()
-```
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>item_id</th>
-      <th>user_id</th>
-      <th>region</th>
-      <th>city</th>
-      <th>parent_category_name</th>
-      <th>category_name</th>
-      <th>param_1</th>
-      <th>param_2</th>
-      <th>param_3</th>
-      <th>title</th>
-      <th>description</th>
-      <th>price</th>
-      <th>item_seq_number</th>
-      <th>activation_date</th>
-      <th>user_type</th>
-      <th>image</th>
-      <th>image_top_1</th>
-      <th>deal_probability</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>b912c3c6a6ad</td>
-      <td>e00f8ff2eaf9</td>
-      <td>Свердловская область</td>
-      <td>Екатеринбург</td>
-      <td>Личные вещи</td>
-      <td>Товары для детей и игрушки</td>
-      <td>Постельные принадлежности</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>Кокоби(кокон для сна)</td>
-      <td>Кокон для сна малыша,пользовались меньше месяц...</td>
-      <td>400.0</td>
-      <td>2</td>
-      <td>2017-03-28</td>
-      <td>Private</td>
-      <td>d10c7e016e03247a3bf2d13348fe959fe6f436c1caf64c...</td>
-      <td>1008.0</td>
-      <td>0.12789</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2dac0150717d</td>
-      <td>39aeb48f0017</td>
-      <td>Самарская область</td>
-      <td>Самара</td>
-      <td>Для дома и дачи</td>
-      <td>Мебель и интерьер</td>
-      <td>Другое</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>Стойка для Одежды</td>
-      <td>Стойка для одежды, под вешалки. С бутика.</td>
-      <td>3000.0</td>
-      <td>19</td>
-      <td>2017-03-26</td>
-      <td>Private</td>
-      <td>79c9392cc51a9c81c6eb91eceb8e552171db39d7142700...</td>
-      <td>692.0</td>
-      <td>0.00000</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>ba83aefab5dc</td>
-      <td>91e2f88dd6e3</td>
-      <td>Ростовская область</td>
-      <td>Ростов-на-Дону</td>
-      <td>Бытовая электроника</td>
-      <td>Аудио и видео</td>
-      <td>Видео, DVD и Blu-ray плееры</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>Philips bluray</td>
-      <td>В хорошем состоянии, домашний кинотеатр с blu ...</td>
-      <td>4000.0</td>
-      <td>9</td>
-      <td>2017-03-20</td>
-      <td>Private</td>
-      <td>b7f250ee3f39e1fedd77c141f273703f4a9be59db4b48a...</td>
-      <td>3032.0</td>
-      <td>0.43177</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>02996f1dd2ea</td>
-      <td>bf5cccea572d</td>
-      <td>Татарстан</td>
-      <td>Набережные Челны</td>
-      <td>Личные вещи</td>
-      <td>Товары для детей и игрушки</td>
-      <td>Автомобильные кресла</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>Автокресло</td>
-      <td>Продам кресло от0-25кг</td>
-      <td>2200.0</td>
-      <td>286</td>
-      <td>2017-03-25</td>
-      <td>Company</td>
-      <td>e6ef97e0725637ea84e3d203e82dadb43ed3cc0a1c8413...</td>
-      <td>796.0</td>
-      <td>0.80323</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>7c90be56d2ab</td>
-      <td>ef50846afc0b</td>
-      <td>Волгоградская область</td>
-      <td>Волгоград</td>
-      <td>Транспорт</td>
-      <td>Автомобили</td>
-      <td>С пробегом</td>
-      <td>ВАЗ (LADA)</td>
-      <td>2110</td>
-      <td>ВАЗ 2110, 2003</td>
-      <td>Все вопросы по телефону.</td>
-      <td>40000.0</td>
-      <td>3</td>
-      <td>2017-03-16</td>
-      <td>Private</td>
-      <td>54a687a3a0fc1d68aed99bdaaf551c5c70b761b16fd0a2...</td>
-      <td>2264.0</td>
-      <td>0.20797</td>
-    </tr>
-  </tbody>
-</table>
-
-
-## Distribution of Target
+### Distribution of Target
 
 >There's about a million listings with zero demand, and a much smaller number with varying chance of selling.
 
@@ -191,8 +52,7 @@ train.head()
 
 ![png](proposal_images/output_5_3.png)
 
-
-## Distribution of Demand by Region
+### Distribution of Demand by Region
 
 First let's translate the regions from Russian using the `cyrtranslit` package. Then visualize the distribution of each region.
 
@@ -259,7 +119,7 @@ First let's translate the regions from Russian using the `cyrtranslit` package. 
 - There is a tremendous amount of outliers. Not surprising due to the large size of the data.
 - Anything with over 50% chances of selling is an outlier. Based on regional data, expecting a sale is an exception rather than the norm.
 
-## Percentage of Listings per Region
+### Percentage of Listings per Region
 
     Percentage of Listings in Top Regions
     
@@ -277,7 +137,6 @@ First let's translate the regions from Russian using the `cyrtranslit` package. 
 
 
 ![png](proposal_images/output_11_0.png)
-
 
 ## Listings by City
 
@@ -359,7 +218,7 @@ First let's translate the regions from Russian using the `cyrtranslit` package. 
 
 ![png](proposal_images/output_16_0.png)
 
-## Price Distribution
+### ## Price Distribution
 
 
 ![png](proposal_images/output_18_0.png)
