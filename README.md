@@ -218,7 +218,7 @@ First let's translate the regions from Russian using the `cyrtranslit` package. 
 
 ![png](proposal_images/output_16_0.png)
 
-### ## Price Distribution
+### Price Distribution
 
 
 ![png](proposal_images/output_18_0.png)
