@@ -1,6 +1,4 @@
-
-# Deep Learning- Predict Product Demand
----
+# Proposal- Predicting Ad Demand
 
 ## 1. Problem
 
