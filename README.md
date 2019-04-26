@@ -21,6 +21,20 @@ The most challenging part of this project would be dealing with the different ki
 
 The total size of all data included is 123GB, of which only 2GB are csv files and the rest are images. This presents an obvious challenge. On one hand, using google collab would be convenient for GPU acceleration. On the other hand, that much data isn't storable with a free Google Drive account. Working locally might solve the size issue at the expense of slowing graphics processing. Perhaps we could limit the data to a workable compromise. 
 
+### 2.2 Specializations Used
+
+**NLP**
+
+NLP's most important contribution lies be in the form of text summarization. Complete listings have a description field where the user freely writes about the product or service. Text extraction in the form of TFIDF components can help the model understand some meaningful patterns in the data.
+
+There is a lot of text cleaning to do with this dataset. NLP will be incredibly useful for getting the most out of the variables `param_1, param_2, param_3` which are subcategories of each listing that have been provided by the user and are non-standardized.
+
+Generating and filtering NLP features will be challenging because of the 1.5 Million datapoints and the sheer number of unique values per variable. Dummies will have to be evaluated for importance during the feature generation process, in order to avoid maxing out RAM memory.
+
+**Keras and Deep Learning**
+
+Having so much image data to play with, we'll naturally compare various forms of Neural Networks on the image data. 
+
 ## 3. Use Case
 
 This prediction can be used to inform sellers on how to best optimize their listing and provide some indication of how much interest they should realistically expect to receive. Some online retailers already have implementations of similar models to make suggestions that help sellers. 
@@ -29,11 +43,19 @@ Ebay is a notable example of a similar implementation, which gives the seller an
 
 >*An implementation like this is equal to Craigslist on steroids.*
 
-## 4. Data
+### 3.1 End-User Vision
+
+When users create ads, they would receive recommendations based on the information in their listing as a whole. These recommendations are aimed at improving their experience of placing ads in the site, and therefore prevent them from migrating to other platforms. Based on all the entries a user has made to a listing, they'd be able to see the likelihood of their ad becoming a sale.
+
+## 4. Milestones
+
+The goal of this project is to achieve the best balance between predictive and explanatory power while reducing computational complexity. Good models which go into production are robust, which means their performance is stable under various conditions, and they aren't unnecessarily complex. Although platforms with GPU acceleration are available, RAM memory is still a limitation when loading such large datasets and performing transformations. This model should make the most out of the amount of memory provided by Kaggle, which is 13GB, and at the same time produce the lowest possible error along with an understanding of the sources for error.
+
+## 5. Data
 
 Avito is a Russian classified advertisements platform similar to Craigslist. They released a dataset including listings with fields such as title, description, location(city & region), price and images. The target variable is the Deal Probability, which is the likelihood that an ad actually sold something. It's not possible to verify every transaction with certainty, so this column's value can be any float from zero to one. In addition, there is supplemental historical data on every listing ID which shows the dates every ad was active on the site.
 
-## 5. Short EDA
+## 6. Short EDA
 
 ### Distribution of Target
 
