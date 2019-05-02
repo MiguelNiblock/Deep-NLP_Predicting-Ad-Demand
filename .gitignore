@@ -6,3 +6,5 @@ train\.pkl
 train_features\.pkl
 
 test_features\.pkl
+
+*.pkl
