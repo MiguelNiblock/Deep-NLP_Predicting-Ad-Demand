@@ -1,0 +1,4 @@
+# Data source
+https://www.kaggle.com/c/avito-demand-prediction/data
+
+# Only 'train.csv' and 'test.csv' are used in this project.
