@@ -8,3 +8,5 @@ train_features\.pkl
 test_features\.pkl
 
 *.pkl
+
+notebooks/preliminary_trials/5\.Model Tuning/keras
