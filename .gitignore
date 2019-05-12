@@ -10,3 +10,9 @@ test_features\.pkl
 *.pkl
 
 notebooks/preliminary_trials/5\.Model Tuning/keras
+
+notebooks/preliminary_trials/5\.Model Tuning/light_gbm
+
+notebooks/preliminary_trials/5\.Model Tuning/mlpregressor
+
+notebooks/preliminary_trials/5\.Model Tuning/random_forest
