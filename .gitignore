@@ -16,3 +16,7 @@ notebooks/preliminary_trials/5\.Model Tuning/light_gbm
 notebooks/preliminary_trials/5\.Model Tuning/mlpregressor
 
 notebooks/preliminary_trials/5\.Model Tuning/random_forest
+
+*.zip
+
+*.sav
