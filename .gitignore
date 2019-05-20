@@ -20,3 +20,7 @@ notebooks/preliminary_trials/5\.Model Tuning/random_forest
 *.zip
 
 *.sav
+
+notebooks/final_model/trained_models/
+
+notebooks/final_model/predictions/
