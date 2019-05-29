@@ -5,7 +5,7 @@
 When selling used goods online, a combination of tiny, nuanced details in a product description can make a big difference in drumming up interest.
 Details like:
 
-![image](reports/Project_Proposal/proposal_images/image.png)
+![image](proposal_images/image.png)
 
 And, even with an optimized product listing, demand for a product may simply not exist–frustrating sellers who may have over-invested in marketing.
 
@@ -64,15 +64,15 @@ Avito is a Russian classified advertisements platform similar to Craigslist. The
 
 
 
-![png](reports/Project_Proposal/proposal_images/output_5_1.png)
+![png](proposal_images/output_5_1.png)
 
 
 
-![png](reports/Project_Proposal/proposal_images/output_5_2.png)
+![png](proposal_images/output_5_2.png)
 
 
 
-![png](reports/Project_Proposal/proposal_images/output_5_3.png)
+![png](proposal_images/output_5_3.png)
 
 ### Distribution of Demand by Region
 
@@ -135,7 +135,7 @@ First let's translate the regions from Russian using the `cyrtranslit` package. 
 
 
 
-![png](reports/Project_Proposal/proposal_images/output_8_0.png)
+![png](proposal_images/output_8_0.png)
 
 
 - There is a tremendous amount of outliers. Not surprising due to the large size of the data.
@@ -158,7 +158,7 @@ First let's translate the regions from Russian using the `cyrtranslit` package. 
 
 
 
-![png](reports/Project_Proposal/proposal_images/output_11_0.png)
+![png](proposal_images/output_11_0.png)
 
 ## Listings by City
 
@@ -238,10 +238,10 @@ First let's translate the regions from Russian using the `cyrtranslit` package. 
 
 
 
-![png](reports/Project_Proposal/proposal_images/output_16_0.png)
+![png](proposal_images/output_16_0.png)
 
 ### Price Distribution
 
 
-![png](reports/Project_Proposal/proposal_images/output_18_0.png)
+![png](proposal_images/output_18_0.png)
 
